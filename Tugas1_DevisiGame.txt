@@ -1,0 +1,318 @@
+Apa itu C#?
+C# adalah bahasa pemrograman yang dikembangkan oleh Microsoft. Ini adalah bahasa yang kuat dan fleksibel yang digunakan untuk pengembangan berbagai jenis aplikasi, termasuk aplikasi desktop, permainan, perangkat lunak perusahaan, dan aplikasi web. C# adalah bagian dari platform pengembangan perangkat lunak .NET, dan sering digunakan bersamaan dengan teknologi seperti ASP.NET dan Windows Forms.
+
+Fitur Utama C#:
+
+Type-Safe: C# adalah bahasa yang tipe aman, yang berarti Anda harus mendefinisikan tipe data sebelum menggunakan variabel. Ini membantu mengurangi kesalahan tipe data.
+
+Object-Oriented: C# adalah bahasa pemrograman berorientasi objek. Anda bekerja dengan objek dan kelas untuk mengorganisasi kode Anda.
+
+Platform-Independent: Kode C# dapat dijalankan di berbagai platform, asalkan ada lingkungan runtime .NET yang sesuai.
+
+Modern Syntax: C# memiliki sintaks yang bersih dan modern, yang membuatnya mudah dipahami dan digunakan.
+
+Garbage Collection: C# menggunakan pengumpul sampah (garbage collector) untuk mengelola alokasi memori dan menghindari kebocoran memori.
+
+Konsep Penting dalam C#:
+
+Variabel dan Tipe Data: Anda dapat mendefinisikan variabel dalam C# dengan tipe data seperti int, string, double, dll.
+
+Kelas dan Objek: C# adalah bahasa berorientasi objek, jadi Anda akan bekerja dengan kelas dan objek. Kelas adalah blueprint untuk objek.
+
+Metode: Anda mendefinisikan metode untuk mengorganisasi logika dalam program Anda. Metode Main adalah titik masuk program.
+
+Pernyataan Pengendali Aliran: C# memiliki pernyataan seperti if, else, for, dan while untuk mengendalikan alur program.
+
+Koleksi: Anda dapat menggunakan koleksi seperti List, Array, dan Dictionary untuk mengelola data dalam aplikasi Anda.
+
+Exception Handling: C# memiliki dukungan untuk menangani pengecualian (exceptions) untuk mengelola kesalahan dalam program Anda.
+
+Pengembangan Aplikasi C#:
+
+Anda dapat mengembangkan berbagai jenis aplikasi dengan C#, seperti:
+
+Aplikasi Desktop: Gunakan Windows Forms atau Windows Presentation Foundation (WPF) untuk membuat aplikasi desktop.
+
+Aplikasi Web: ASP.NET memungkinkan Anda untuk membuat aplikasi web dengan C#.
+
+Aplikasi Mobile: Gunakan Xamarin untuk mengembangkan aplikasi mobile cross-platform dengan C#.
+
+Permainan: Anda dapat mengembangkan permainan menggunakan platform seperti Unity, yang mendukung C#.
+
+Perangkat Lunak Perusahaan: C# digunakan dalam pengembangan perangkat lunak perusahaan dan aplikasi back-end.
+
+Deklarasi Pustaka
+menyediakan sekumpulan fungsi, kelas, dan metode yang dapat digunakan dalam program tanpa perlu menulis ulang kode tersebut. Deklarasi namespace menggunakan pernyataan "using" atau "using namespace". Pada contoh, kita menggunakan pustaka System. Pustaka ini kita butuhkan untuk menggunakan class Console dan method WriteLine().
+
+
+Class
+
+Class adalah sebuah rancangan atau blue print / Cetak Biru dari objek. Cukup pahami saja bahwa class itu merupakan nama program.
+
+Method / Fungsi
+sebuah fitur guna  memecah  program menjadi bagian yang lebih kecil dan kompleks agar bisa dipakai lagi. Fungsi yang harus ada pada sebuah program adalah fungsi Main(), karena fungsi Main() merupakan fungsi utama yang akan dieksekusi pertama kali.
+
+Program Hello World
+Saat belajar bahasa pemrograman, biasanya hal yang pertama dilakukan adalah membuat aplikasi Hello World
+Untuk membuat program c# kita bisa gunakan perintah sebagai berikut
+dotnet new console -o MyFirstApp
+https://learn.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code?pivots=dotnet-7-0
+
+C# Main Function
+Main function merupakan fungsi utama yang akan dieksekusi oleh C#
+
+
+WriteLine function
+Untuk menampilkan tulisan di C# di Console, kita bisa menggunakan function WriteLine()
+Misal jika kita ingin menampilkan tulisan : Hello World, kita bisa membuat kode program Console.WriteLine(‘Hello World’) atau Console.WriteLine(“Hello World”)
+
+Variable
+Variable merupakan tempat untuk menyimpan data.
+Variable sangat berguna ketika kita ingin menggunakan data yang sama berkali-kali, daripada kita buat berulang-ulang, lebih baik kita simpan data tersebut dalam variable
+Variable wajib memiliki tipe data dan nama variable.
+Ketika kita akan mengakses variable, kita cukup menyebutkan  nama variable nya.
+
+Bekerja Dengan Variable C#
+Untuk membuat deklarasi variable, kita bisa gunakan format :
+TipeData namaVariable;
+Biasanya penamaan variable di C# menggunakan camelCase, seperti firstName, lastName, longVariableName
+Setelah mendeklarasikan variable, kita bisa mengubah isi variable dengan cara :
+namaVariable = isi value 
+
+Deklarasi Variable 
+Variable juga bisa dibuat langsung dengan deklarasi nilai nya.
+Cara membuatnya kita bisa gunakan perintah :
+TipeData namaVariable = isivariable;
+
+Kata Kunci Var
+Saat kita membuat variable langsung dengan nilainya, kita bisa menggunakan kata kunci var sebagai pengganti TipeData nya
+TipeData akan dibaca sesuai dengan isi nilai nya secara otomatis oleh C#, sehingga kita tidak perlu menyebutkan TipeData nya lagi
+Cara menggunakan kata kunci var, seperti ini :
+var namaVariable = value;
+
+Const
+digunakan untuk menjadikan variable dan nilainya menjadi immutable (tidak bisa diubah sama sekali)
+Jangan membuat konstanta untuk mewakili informasi yang Anda perkirakan akan berubah sewaktu-waktu.
+Kata kunci const akan menjadikan data di hardcode pada saat C# melakukan kompilasi kode program.
+Misal jika kita membuat data waktu saat ini menggunakan const, nilai waktu akan di hardcode ketika kode program di kompilasi, sehingga tidak akan pernah berubah.
+
+Komentar
+Komentar adalah kode program yang akan diabaikan ketika kode program di dijalankan
+Biasanya komentar digunakan untuk menambahkan dokumentasi pada kode program
+
+Macam - macam Komentar
+Single-line atau satu baris, bisa menggunakan perintah :
+// silahkan komentar disini
+Multi-line atau lebih dari satu baris, bisa menggunakan perintah :
+/* 
+komentar sembarang 
+*/
+
+Number
+Number adalah tipe data angka, terdapat beberapa jenis tipe data Number, yakni int, float, dan double.
+int merupakan tipe data bilangan bulat
+double dan float merupakan tipe data bilangan desimal
+Penulisan koma dalam double menggunakan titik, bukan koma, jadi jika kita akan membuat bilangan desimal 0,5 (nol koma lima), maka ditulis 0.5. 
+Penulisan tipe data float sama dengan double hanya saja di akhir perlu ditambah dengan huruf f, 0.5f.
+
+String
+String merupakan tipe data text.
+Untuk membuat String, kita bisa menggunakan tanda kutip satu atau kutip dua, lalu di dalamnya  berisi nilai text nya.
+
+Karakter Backslash (\)
+Ada beberapa hal yang bisa kita gunakan menggunakan karakter Backslash pada tipe data string.
+“\t” bisa kita  gunakan untuk membuat kolom
+“\r” bisa kita gunakan untuk membuat baris
+Jika kita ingin membuat tanda kutip dua, yang biasanya kita gunakan untuk membuat judul maka kita bisa menggunakan \”
+
+Manipulasi String
+Terkadang kita ada kebutuhan yang mengharuskan kita untuk membuat string menjadi lowercase, uppercase, menghitung panjang string dan menggabungkan string
+Dalam c# untuk menjadikan huruf lowercase ada satu fungsi yaitu ToLower()
+Untuk menjadikan uppercase ToUpper()
+Untuk menghitung karakter pada sebuah string bisa kita gunakan properti length
+Dan ada saatnya kita butuh untuk menggabungkan string, yaitu cukup dengan menggunakan karakter tambah (+)
+
+Manipulasi String
+Terkadang kita ada kebutuhan yang mengharuskan kita untuk membuat string menjadi lowercase, uppercase, menghitung panjang string dan menggabungkan string
+Dalam c# untuk menjadikan huruf lowercase ada satu fungsi yaitu ToLower()
+Untuk menjadikan uppercase ToUpper()
+Untuk menghitung karakter pada sebuah string bisa kita gunakan properti length
+Dan ada saatnya kita butuh untuk menggabungkan string, yaitu cukup dengan menggunakan karakter tambah (+)
+
+Boolean
+Tipe data boolean dalam bahasa pemrograman C# digunakan untuk merepresentasikan dua nilai yang mungkin: true (benar) atau false (salah).
+Ini adalah tipe data yang sangat penting dalam logika pemrograman karena digunakan untuk mengontrol alur eksekusi program dan membuat keputusan berdasarkan kondisi tertentu.
+Tipe data boolean juga sering digunakan dalam ekspresi logika seperti && (dan), || (atau), dan ! (negasi) untuk membuat ekspresi yang lebih kompleks untuk pengambilan keputusan dalam program.(dipelajari pada materi selanjutnya).
+
+Konversi Tipe Data
+Dalam c# terdapat dua jenis tipe dari casting / konversi tipe data yaitu :
+implisit (otomatis) -> mengonversi dari tipe data yang memiliki size yang lebih kecil ke yang lebih besar 
+char -> int -> long -> float -> double
+eksplisit (manual)  -> mengonversi dari tipe data yang memiliki size yang lebih besar ke yang lebih kecil
+double -> float -> long -> int -> char
+
+float ke int
+Untuk mengonversi tipe data float menjadi tipe data integer cukup kita tambahkan (int) sebelum nama variabel.
+
+Number ke String
+Untuk mengkonversi tipe data number (int, float, double) menjadi string , kita bisa menggunakan satu fungsi yaitu ToString()
+
+String ke Int
+Untuk mengkonversi tipe data string menjadi int, kita bisa menggunakan method/fungsi Parse(); dan Stringnya harus berbentuk angka 0-9
+
+Operator Aritmatika
+ Operator
++ Penjumlahan, - (Pengurangan atau Negatif), * Perkalian, / Pembagian, % Modulo (sisa hasil bagi)
+
+Operator Penugasan
+a = a + 10 == a += 10
+a = a - 10 == a -= 10
+a = a * 10 == a *= 10
+a = a / 10 == a /= 10
+a = a % 10 == a %= 10
+
+Increment dan Decrement
+++a == Hasil dari ++a adalah nilai a setelah operasi
+a++ == Hasil dari a++ adalah nilai a sebelum operasi
+–a == Hasil dari –a adalah nilai a setelah operasi
+a– == Hasil dari a–  adalah nilai a sebelum operasi
+
+Operator Perbandingan
+Operator perbandingan merupakan operator yang mengembalikan nilai booleam (true / false)
+== Sama dengan
+> Lebih dari
+< Kurang dari
+>= Lebih dari atau sama dengan
+<= kurang dari atau sama dengan
+
+Operator Logika
+Digunakan untuk melakukan operasi logika pada nilai-nilai boolean dan menghasilkan output yang juga boolean
+&& Dan
+|| Atau
+! Negasi / Kebalikan
+Operator &&
+True + True = True
+True + False = False
+False + True = False
+False + False = False
+
+Operator ||
+True + True = True
+True + False = True
+False + True = True
+False + False = False
+
+Array
+Array dalam C# digunakan untuk menyimpan koleksi elemen dengan tipe data yang sama dalam urutan terindeks.
+Indeks array dimulai dari 0, yang berarti elemen pertama memiliki indeks 0, elemen kedua memiliki indeks 1, dan seterusnya.
+Array dapat memiliki dimensi tunggal, 2 dimensi, dan multidimensi yang lain.
+Panjang setiap dimensi ditetapkan saat instance array dibuat.
+Kita bisa memanggil elemen array berdasar indexnya. yang nantinya bisa menggunakan perulangan (materi selanjutnya).
+Cara mendeklarasikan array adalah sebagai berikut
+tipeData[] namaVariable; atau tipeData[] namaVariable = new int[5];
+Untuk memasukkan nilai ke dalamnya, kita dapat menempatkan nilai dalam daftar yang dipisahkan dengan koma, di dalam kurung kurawal							 tipeData[] namaVariable = {"Volvo", "BMW", "Ford", "Mazda"};
+
+Array Multidimensi
+
+Terkadang kita butuh menyimpan data kita dalam bentuk tabel yang terdiri dari baris dan kolom.
+Meskipun terlihat sedikit rumit, namun terdapat beberapa kondisi saat kita membuat sebuah program yang mengharuskan untuk menggunkan array multidimensi ini.
+Untuk mendeklarasikan array multidimensi kita bisa menggunakan cara berikut
+2 Dimensi ,  tipeData[,] namaVariable = new int[3,2] atau tipeData[,] namaVariable ={ {1,2}, {3,4}, {4,5} }
+3 Dimensi tipeData[,,] namaVariable = new int[2,2,3] atau 						tipeData[,,] namavariable = { { { 1,2,3 },{ 4,5,6 } },{ { 7,8,9 },{ 10,11,12 } } }
+
+Pengertian List
+List dalam C# adalah salah satu struktur data yang sangat berguna dan fleksibel yang digunakan untuk menyimpan kumpulan elemen atau objek dalam urutan tertentu.
+ List ini termasuk dalam namespace System.Collections.Generic.
+ List memungkinkan Anda untuk menambahkan, menghapus, atau mengakses elemen-elemen di dalamnya dengan mudah.
+Ada Beberapa method/ fungsi yang dapat kita gunakan pada List, add(),AddRange(),Remove(), RemoveAt(), IndexOf(), Containts(), Count()
+Untuk membuat List kita bisa menentukan tipe datanya, misal 
+List<tipeData> namaVariable = new List<tipeData>;
+Atau bisa mendeklarasikan langsung isinya dengan kata kunci var, 				var namaVariable = new List<tipeData>{“game”, “mobile”, “web”};
+
+if - else
+if-else adalah salah satu pengendalian alur program yang digunakan untuk mengambil keputusan berdasarkan kondisi tertentu. Ini memungkinkan program untuk menjalankan blok kode tertentu jika kondisi tertentu terpenuhi, dan menjalankan blok kode lain jika kondisi tersebut tidak terpenuhi.
+if Statement: Blok kode dalam if statement akan dijalankan jika kondisi yang diuji adalah benar (true).
+else Statement: Blok kode dalam else statement akan dijalankan jika kondisi yang diuji dalam if adalah salah (false).
+else if Statement: Anda dapat menggunakan else if statement untuk menguji beberapa kondisi secara berurutan. Blok kode dalam else if statement akan dijalankan jika kondisi yang diuji dalam if sebelumnya adalah salah (false), dan kondisi dalam else if adalah benar (true).
+
+Pengkondisian - Switch
+switch adalah salah satu struktur kontrol yang digunakan dalam pemrograman untuk membuat keputusan berdasarkan nilai ekspresi yang berbeda.
+Ini memungkinkan program untuk menjalankan blok kode tertentu berdasarkan nilai ekspresi yang cocok dengan salah satu dari beberapa kasus yang telah ditentukan.
+Penulisan switch dalam c# adalah sebagai berikut
+int pilihan = 2;
+switch (pilihan)
+{
+    // Kasus-kasus disediakan di sini
+}
+
+Switch
+case adalah nilai-nilai atau ekspresi yang dibandingkan dengan ekspresi switch. Jika salah satu case cocok dengan ekspresi switch, blok kode dalam case tersebut akan dijalankan.
+Default (default): case default adalah case yang dijalankan jika tidak ada case yang cocok dengan ekspresi switch. Ini bersifat opsional dan tidak harus ada dalam setiap struktur switch.
+
+Ternary Operator
+Operator ternary adalah cara singkat untuk mengevaluasi ekspresi berdasarkan kondisi tertentu.
+Sama seperti if else namun ini versi singkatya.
+penulisan ternary operator adalah sebagai berikut
+kondisi ? nilaiJikaBenar : nilaiJikaSalah;
+
+Perulangan
+Perulangan atau looping adalah konsep yang sangat penting dalam pemrograman yang digunakan untuk mengulangi serangkaian perintah atau tugas tertentu berulang kali selama kondisi tertentu terpenuhi. 
+Dengan menggunakan perulangan, Anda dapat mengeksekusi blok kode yang sama berulang kali tanpa harus menulisnya secara berulang.
+Ada beberapa jenis perulangan yang umum digunakan dalam C#, For,while, do while, foreach
+
+Perulangan - for
+Daripada kita menuliskan blok kode yang berulang - ulang secara manual, alangkah baiknya kita menggunakan perulangan agar lebih efisien dan cepat dalam penulisan blok kode.
+penulisan perulangan for adalah sebagai berikut
+for(int = 0 ; i <5 ; i++){
+	//blok kode
+}
+Perulangan for memiliki 3 bagian  yang perlu diperhatikan
+pertama (int i = 0) adalah sebuah “inisialisasi”  yang  menetapkan nilai awalnya ke 0.
+kedua (i < 5) adalah “kondisi”dimana perulangan akan terus berjalan hingga kondisi terpenuhi
+ketiga (i++) adalah “iterator”  menentukan bagaimana memodifikasi variabel perulangan setelah mengeksekusi blok setelah pernyataan for. Di sini, ini menentukan bahwa indeks harus ditambah dengan 1 setiap kali blok dieksekusi.
+
+Perulangan - While
+Sama dengan for, while juga merupakan sebuah perulangan akan tetapi terdapat perbedaan deklarasi/ penulisan kode program antara for dan while
+Penulisan perulangan while dalam C# adalah sebagai berikut,
+int i = 0;
+while( i < 5){
+//kode program
+i++;
+}
+Dimana 
+int i adalah sebuah inisialisasi
+(i < 5  ) adalah kondisinya
+dan i++ adalah iterasi / iteratornya
+
+Perulangan Do While
+Perulangan Do while sedikit berbeda dengan while, meskipun namanya hampir sama.
+terdapat perbedaan dimana pada saat menggunakan perulangan while  jika kondisi tidak terpenuhi maka perulangan tidak akan berjalan. Tapi jika kita menggunakan Do While ,  jika suatu kondisi tidak terpenuhi masih ada minimal 1 output yang keluar.
+penulisan perulangan Do While adalah sebagai berikut
+
+Perulangan - Foreach
+Foreach memberikan  blok kode yang lebih simpel dan lebih mudah daripada perulangan yang lain.
+dengan foreach kita bisa dengan cepat dan mudah untuk megakses / mencetak array
+pernulisan foreach dalam c# adalah sebagai berikut,
+foreach(var a in angka){
+//blok kode
+}
+
+Break
+Break adalah pernyataan yang biasanya digunakan dalam loop (for, while, atau do-while) atau dalam struktur switch untuk menghentikan eksekusi loop atau keluar dari struktur switch lebih awal. 
+Jika terdapat kode program setelah break, maka kode tersebut tidak akan dikerjakan / akan diabaikan. 
+
+Continue
+Continue adalah pernyataan yang digunakan dalam loop untuk melanjutkan ke iterasi berikutnya tanpa menjalankan kode di bawahnya dalam iterasi saat ini.
+ Ini berguna ketika Anda ingin mengabaikan beberapa iterasi loop berdasarkan kondisi tertentu.
+
+Function
+Fungsi (juga dikenal sebagai metode dalam konteks C#) adalah blok kode yang digunakan untuk menjalankan tugas tertentu.
+Fungsi memungkinkan untuk mengelompokkan sejumlah pernyataan ke dalam satu unit yang dapat digunakan kembali. 
+Fungsi memiliki nama dan dapat menerima argumen (data yang diteruskan ke dalamnya) dan mengembalikan nilai (hasil dari operasinya).
+Penulisan fungsi dalam c# adalah sebagai berikut 
+[modifiers] returnType namaFungsi([parameter1, parameter2, …….])
+{
+	//blok kode
+	return nilaiKembali; (opsional, tergantung return type fungsinya)
+}
+
